@@ -7,7 +7,8 @@ st.set_page_config(page_title="Players EDA Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"D:\Players\players_cleaned.csv")
+    return pd.read_csv("players_cleaned.csv")
+
 
 df = load_data()
 
